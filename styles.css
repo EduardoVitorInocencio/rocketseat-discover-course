@@ -86,10 +86,12 @@ body * {
   position: absolute;
   left: 0;
   z-index: 1;
+
+  animation: slide-out 0.4s forwards;
 }
 
 .light #switch button {
-  animation: slide-in 0.4s;
+  animation: slide-in 0.4s forwards;
 }
 
 #switch span {
@@ -182,5 +184,15 @@ footer {
 
   to {
     left: 50%;
+  }
+}
+
+@keyframes slide-out {
+  from {
+    left: 50%;
+  }
+
+  to {
+    left: 0;
   }
 }
