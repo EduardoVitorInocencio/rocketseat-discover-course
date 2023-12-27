@@ -89,8 +89,7 @@ body * {
 }
 
 .light #switch button {
-  right: 0;
-  left: initial;
+  animation: slide-in 0.4s;
 }
 
 #switch span {
@@ -171,5 +170,17 @@ footer {
 
   .ligth {
     --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
+}
+
+/* ANIMATIONS */
+
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+
+  to {
+    left: 50%;
   }
 }
